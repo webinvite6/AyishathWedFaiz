@@ -1,1 +1,811 @@
+/* ===========================
+GOOGLE FONTS & RESET
+=========================== */ 
 
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+} 
+
+body{
+font-family:'Poppins',sans-serif;
+overflow:hidden;
+background:#FAF6F0;
+}
+#opening{
+position:fixed;
+inset:0;
+z-index:9999;
+cursor:pointer;
+} 
+
+.cover-image{
+width:100%;
+height:100%;
+object-fit:cover;
+}
+/* ===========================
+FLOATING PETALS
+=========================== */ 
+
+.petals{
+position:fixed;
+inset:0;
+pointer-events:none;
+overflow:hidden;
+z-index:2;
+} 
+
+.petals span{ 
+
+position:absolute;
+top:-10%; 
+
+font-size:28px; 
+
+animation:fall linear infinite;
+} 
+
+/* Different positions */ 
+
+.petals span:nth-child(1){
+left:5%;
+animation-duration:12s;
+} 
+
+.petals span:nth-child(2){
+left:18%;
+animation-duration:10s;
+animation-delay:2s;
+} 
+
+.petals span:nth-child(3){
+left:35%;
+animation-duration:14s;
+} 
+
+.petals span:nth-child(4){
+left:50%;
+animation-duration:9s;
+animation-delay:1s;
+}
+/* HERO */ 
+
+.hero{ 
+
+.hero{
+padding:50px 25px 30px;
+} 
+
+background:#fffdf9; 
+
+text-align:center; 
+
+} 
+
+.hero-content{ 
+
+max-width:800px; 
+
+margin:auto; 
+
+} 
+
+.bismillah{ 
+
+font-family:'Amiri',serif; 
+
+font-size:42px; 
+
+color:#b68a2d; 
+
+line-height:1.8; 
+
+} 
+
+.gold-divider{ 
+
+width:120px; 
+
+height:2px; 
+
+background:#d4af37; 
+
+margin:25px auto; 
+
+} 
+
+.blessing{ 
+
+font-size:20px; 
+
+letter-spacing:2px; 
+
+color:#8d6c2f; 
+
+margin-bottom:15px; 
+
+} 
+
+.invite-text{ 
+
+font-size:18px; 
+
+line-height:1.9; 
+
+margin:25px 0; 
+
+color:#555; 
+
+} 
+
+.bride-name,
+.groom-name{ 
+
+font-family:'Cinzel',serif; 
+
+font-size:56px; 
+
+color:#c9a44c; 
+
+margin:15px 0; 
+
+} 
+
+.heart-divider{ 
+
+font-size:28px; 
+
+color:#c9a44c; 
+
+margin:10px 0; 
+
+} 
+
+.parents{
+font-family:'Cinzel', serif;
+font-size:22px;
+font-weight:500;
+color:#8b6b3d;
+line-height:1.8;
+letter-spacing:0.5px;
+margin:8px 0;
+}
+.petals span:nth-child(5){
+left:65%;
+animation-duration:13s;
+} 
+
+.petals span:nth-child(6){
+left:78%;
+animation-duration:11s;
+animation-delay:3s;
+} 
+
+.petals span:nth-child(7){
+left:90%;
+animation-duration:15s;
+} 
+
+.petals span:nth-child(8){
+left:98%;
+animation-duration:12s;
+animation-delay:4s;
+} 
+
+@keyframes fall{ 
+
+0%{ 
+
+transform:
+translateY(-100px)
+rotate(0deg); 
+
+opacity:0; 
+
+} 
+
+15%{ 
+
+opacity:1; 
+
+} 
+
+100%{ 
+
+transform:
+translateY(120vh)
+rotate(360deg); 
+
+opacity:0; 
+
+} 
+
+}
+/* ===========================
+EVENT DETAILS
+=========================== */ 
+
+.event-section{ 
+
+.event-section{
+padding:40px 25px 60px;
+}
+background:#fdf8f2;
+text-align:center; 
+
+} 
+
+.section-title{ 
+
+font-family:'Cinzel',serif;
+font-size:36px;
+color:#b68a2d;
+margin-bottom:25px; 
+
+} 
+
+.event-card{
+max-width:850px;
+margin:20px auto 0; 
+
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(220px,1fr));
+gap:25px; 
+
+} 
+
+.event-item{ 
+
+background:white; 
+
+padding:35px; 
+
+border-radius:18px; 
+
+border:1px solid rgba(212,175,55,.3); 
+
+box-shadow:0 10px 30px rgba(0,0,0,.08); 
+
+transition:.35s; 
+
+} 
+
+.event-item:hover{ 
+
+transform:translateY(-8px); 
+
+box-shadow:0 18px 40px rgba(201,164,76,.25); 
+
+} 
+
+.icon{ 
+
+font-size:42px; 
+
+margin-bottom:15px; 
+
+} 
+
+.event-item h3{ 
+
+font-family:'Cinzel',serif; 
+
+color:#b68a2d; 
+
+margin-bottom:12px; 
+
+} 
+
+.event-item p{ 
+
+color:#555; 
+
+line-height:1.8; 
+
+}
+/* ===========================
+COUNTDOWN
+=========================== */ 
+
+.countdown-section{ 
+
+padding:40px 20px; 
+
+background:#fffdf9; 
+
+text-align:center; 
+
+} 
+
+.countdown{ 
+
+margin-top:45px; 
+
+display:flex; 
+
+justify-content:center; 
+
+flex-wrap:wrap; 
+
+gap:20px; 
+
+} 
+
+.time-box{ 
+
+width:120px; 
+
+height:120px; 
+
+background:white; 
+
+border-radius:20px; 
+
+border:1px solid rgba(201,164,76,.3); 
+
+box-shadow:0 10px 30px rgba(0,0,0,.08); 
+
+display:flex; 
+
+flex-direction:column; 
+
+justify-content:center; 
+
+align-items:center; 
+
+} 
+
+.time-box span{ 
+
+font-size:40px; 
+
+font-weight:bold; 
+
+color:#c9a44c; 
+
+font-family:'Cinzel',serif; 
+
+} 
+
+.time-box p{ 
+
+margin-top:10px; 
+
+color:#666; 
+
+letter-spacing:1px; 
+
+}
+/* ===========================
+VENUE
+=========================== */ 
+
+.venue-section{ 
+
+padding:40px 20px; 
+
+background:#fffdf9; 
+
+text-align:center; 
+
+} 
+
+.venue-card{ 
+
+max-width:550px; 
+
+margin:50px auto; 
+
+background:white; 
+
+padding:45px 35px; 
+
+border-radius:22px; 
+
+border:1px solid rgba(201,164,76,.25); 
+
+box-shadow:0 15px 40px rgba(0,0,0,.08); 
+
+} 
+
+.venue-icon{ 
+
+font-size:50px; 
+
+margin-bottom:20px; 
+
+} 
+
+.venue-card h3{ 
+
+font-family:'Cinzel',serif; 
+
+color:#b68a2d; 
+
+margin-bottom:15px; 
+
+} 
+
+.venue-card p{ 
+
+color:#666; 
+
+line-height:1.8; 
+
+margin-bottom:30px; 
+
+} 
+
+.map-btn{ 
+
+display:inline-block; 
+
+background:#c9a44c; 
+
+color:white; 
+
+text-decoration:none; 
+
+padding:15px 35px; 
+
+border-radius:40px; 
+
+transition:.3s; 
+
+font-weight:600; 
+
+} 
+
+.map-btn:hover{ 
+
+background:#b48d2b; 
+
+transform:translateY(-3px); 
+
+}
+/* ===========================
+QURAN & DUA
+=========================== */ 
+
+.dua-section{ 
+
+padding:40px 20px; 
+
+background:#fdf8f2; 
+
+} 
+
+.dua-container{ 
+
+max-width:900px; 
+
+margin:auto; 
+
+text-align:center; 
+
+} 
+
+.arabic-verse{ 
+
+font-family:'Amiri',serif; 
+
+font-size:38px; 
+
+line-height:2; 
+
+color:#b68a2d; 
+
+margin:40px 0; 
+
+} 
+
+.translation{ 
+
+max-width:700px; 
+
+margin:auto; 
+
+font-size:18px; 
+
+line-height:1.9; 
+
+color:#555; 
+
+} 
+
+.reference{ 
+
+margin-top:25px; 
+
+color:#9a7b35; 
+
+font-style:italic; 
+
+} 
+
+.dua{ 
+
+margin-top:45px; 
+
+font-family:'Amiri',serif; 
+
+font-size:34px; 
+
+color:#c9a44c; 
+
+}
+/* ===========================
+THANK YOU
+=========================== */ 
+
+.thankyou{ 
+
+.thankyou{
+padding:50px 25px 60px;
+} 
+
+text-align:center; 
+
+background:#fffdf9; 
+
+} 
+
+.thanks-text{ 
+
+max-width:700px; 
+
+margin:20px auto; 
+
+color:#666; 
+
+line-height:1.9; 
+
+font-size:18px; 
+
+} 
+
+.closing-divider{ 
+
+width:120px; 
+
+height:2px; 
+
+background:#c9a44c; 
+
+margin:40px auto; 
+
+} 
+
+.couple-sign{
+font-family:'Cormorant Garamond', serif;
+font-size:28px;
+font-weight:500;
+color:#b68a2d;
+line-height:1.6;
+letter-spacing:1px;
+text-align:center;
+margin-top:15px;
+} 
+
+.couple-sign span{
+color:#8b6b3d;
+margin:0 8px;
+font-size:24px;
+} 
+
+footer{ 
+
+background:#f8f2e8; 
+
+padding:35px 20px; 
+
+text-align:center; 
+
+color:#7b6848; 
+
+line-height:1.8; 
+
+}
+/* ===========================
+SCROLL ANIMATIONS
+=========================== */ 
+
+.hero,
+.event-section,
+.countdown-section,
+.venue-section,
+.dua-section,
+.thankyou{ 
+
+animation:fadeUp 1.5s ease; 
+
+}
+
+
+@keyframes fadeUp{ 
+
+from{ 
+
+opacity:0; 
+
+transform:translateY(40px); 
+
+} 
+
+to{ 
+
+opacity:1; 
+
+transform:translateY(0); 
+
+} 
+
+}
+
+
+/* ===========================
+MOBILE DESIGN
+=========================== */ 
+
+@media(max-width:600px){
+
+
+.bismillah{ 
+
+font-size:32px; 
+
+}
+
+
+.bride-name,
+.groom-name{ 
+
+font-size:40px; 
+
+}
+
+
+.section-title{ 
+
+font-size:28px; 
+
+}
+
+
+.time-box{ 
+
+width:90px; 
+
+height:90px; 
+
+}
+
+
+.time-box span{ 
+
+font-size:28px; 
+
+}
+
+
+.arabic-verse{ 
+
+font-size:28px; 
+
+}
+
+
+.couple-sign{ 
+
+font-size:30px; 
+
+}
+
+
+.envelope{ 
+
+width:280px; 
+
+height:190px; 
+
+}
+
+
+}
+body{ 
+
+opacity:0; 
+
+transition:1s; 
+
+}
+/* Opening page content */ 
+
+#opening .hero-content{
+position:relative;
+text-align:center;
+width:90%;
+max-width:500px;
+margin-top:120px;
+z-index:2;
+}
+#opening .hero-content{
+transform:translateY(-60px);
+}
+.fade-section{
+opacity:0;
+transform:translateY(50px);
+transition:all 1s ease;
+} 
+
+.fade-section.show{
+opacity:1;
+transform:translateY(0);
+}
+/* ===========================
+GOLD DIVIDER
+=========================== */ 
+
+.section-divider{
+display:flex;
+justify-content:center;
+align-items:center;
+margin:15px auto;
+} 
+
+.section-divider::before,
+.section-divider::after{
+content:"";
+width:90px;
+height:1px;
+background:#d4af37;
+} 
+
+.section-divider span{
+color:#d4af37;
+font-size:24px;
+margin:0 18px;
+}
+/* ===========================
+GOLD SPARKLES
+=========================== */ 
+
+.sparkles{
+position:absolute;
+inset:0;
+overflow:hidden;
+pointer-events:none;
+z-index:10;
+} 
+
+.sparkles span{
+position:absolute;
+width:6px;
+height:6px;
+background:#f4d27c;
+border-radius:50%;
+box-shadow:0 0 12px #f4d27c;
+animation:twinkle 6s infinite ease-in-out;
+} 
+
+.sparkles span:nth-child(1){top:10%;left:15%;animation-delay:0s;}
+.sparkles span:nth-child(2){top:20%;left:80%;animation-delay:1s;}
+.sparkles span:nth-child(3){top:35%;left:40%;animation-delay:2s;}
+.sparkles span:nth-child(4){top:50%;left:70%;animation-delay:3s;}
+.sparkles span:nth-child(5){top:65%;left:20%;animation-delay:4s;}
+.sparkles span:nth-child(6){top:75%;left:90%;animation-delay:2s;}
+.sparkles span:nth-child(7){top:85%;left:50%;animation-delay:5s;}
+.sparkles span:nth-child(8){top:25%;left:55%;animation-delay:3s;} 
+
+@keyframes twinkle{
+0%,100%{
+opacity:.2;
+transform:scale(.8);
+}
+50%{
+opacity:1;
+transform:scale(1.6);
+}
+}
