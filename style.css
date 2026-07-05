@@ -855,3 +855,29 @@ MOBILE DESIGN
 
 ...
 }
+.calendar-icon{
+    width:70px;
+    margin:0 auto 15px;
+    border:1px solid #d4af37;
+    border-radius:8px;
+    overflow:hidden;
+    background:#fff;
+    box-shadow:0 3px 8px rgba(0,0,0,.1);
+}
+
+.calendar-month{
+    background:#6D1F3B;
+    color:#fff;
+    font-size:14px;
+    font-weight:600;
+    padding:4px 0;
+    letter-spacing:1px;
+}
+
+.calendar-day{
+    font-family:'Cinzel', serif;
+    font-size:32px;
+    font-weight:700;
+    color:#6D1F3B;
+    padding:8px 0;
+}
