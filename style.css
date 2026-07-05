@@ -11,7 +11,7 @@ box-sizing:border-box;
 body{
 font-family:'Poppins',sans-serif;
 overflow:hidden;
-background:#FAF6F0;
+background:var(--burgundy);
 }
 #opening{
 position:fixed;
@@ -78,7 +78,8 @@ animation-delay:1s;
 padding:50px 25px 30px;
 } 
 
-background:#fffdf9; 
+background:linear-gradient(180deg,#6D1F3B,#54162D);
+    color:white;
 
 text-align:center; 
 
@@ -232,7 +233,7 @@ EVENT DETAILS
 .event-section{
 padding:40px 25px 60px;
 }
-background:#fdf8f2;
+background:#FDF8F4;
 text-align:center; 
 
 } 
@@ -313,7 +314,7 @@ COUNTDOWN
 
 padding:40px 20px; 
 
-background:#fffdf9; 
+background:#6D1F3B;
 
 text-align:center; 
 
@@ -386,7 +387,7 @@ VENUE
 
 padding:40px 20px; 
 
-background:#fffdf9; 
+background:#FDF8F4; 
 
 text-align:center; 
 
@@ -473,7 +474,8 @@ QURAN & DUA
 
 padding:40px 20px; 
 
-background:#fdf8f2; 
+background:#6D1F3B;
+    color:white;
 
 } 
 
@@ -548,7 +550,7 @@ padding:50px 25px 60px;
 
 text-align:center; 
 
-background:#fffdf9; 
+background:#FDF8F4; 
 
 } 
 
@@ -597,7 +599,8 @@ font-size:24px;
 
 footer{ 
 
-background:#f8f2e8; 
+background:#54162D;
+    color:white; 
 
 padding:35px 20px; 
 
